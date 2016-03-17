@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtPROJECTNAME_keyproj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROJECT NAME" />
+
+    <EditText
+        android:id="@+id/edtPROJECTNAME_keyproj"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtName" />
+
+    <SurfaceView
+        android:id="@+id/sp1_keyproj"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtName"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtYEARCOMPLETED_keyproj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp1"
+        android:text="YEAR COMPLETED" />
+
+    <EditText
+        android:id="@+id/edtYEARCOMPLETED_keyproj"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txtPhone" />
+
+    <SurfaceView
+        android:id="@+id/sp2_keyproj"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtPhone"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtVALUE_keyproj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp1"
+        android:text="VALUE" />
+
+    <EditText
+        android:id="@+id/edtVALUE_keyproj"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txtPhone"
+        android:singleLine="true" />
+
+    <SurfaceView
+        android:id="@+id/sp3_keyproj"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtPhone"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_keyproj"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp2"
+            android:background="@drawable/buttondeg"
+            android:text="ADD"
+            android:textColor="@color/list_item_title"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/remove_keyproj"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp2"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/add"
+            android:background="@drawable/buttondeg"
+            android:text="CLEAR"
+            android:textColor="@color/list_item_title"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_keyproj"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/add"></ListView>
+
+</LinearLayout>

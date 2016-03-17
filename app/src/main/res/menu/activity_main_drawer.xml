@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_sales_visit"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Sales visit" />
+
+        <item
+            android:id="@+id/nav_service_visit"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Service visit" />
+
+        <item
+            android:id="@+id/nav_enquiry_bank"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Enquiry bank" />
+
+        <item
+            android:id="@+id/nav_precommissioning"
+            android:icon="@drawable/pre_comm"
+            android:title="PreCommissioning" />
+
+        <item
+            android:id="@+id/nav_commissioning"
+            android:icon="@drawable/comm"
+            android:title="Commissioning" />
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Info" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+        </menu>
+    </item>-->
+
+</menu>

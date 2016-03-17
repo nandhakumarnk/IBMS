@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNAME_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROSPECT NAME" />
+
+        <EditText
+            android:id="@+id/edtNAME_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtName" />
+
+        <SurfaceView
+            android:id="@+id/sp1_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtName"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtADDRESS_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="ADDRESS" />
+
+        <EditText
+            android:id="@+id/edtADDRESS_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone" />
+
+        <SurfaceView
+            android:id="@+id/sp3_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtCONTACTPERSON_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="CONTACT PERSON" />
+
+        <EditText
+            android:id="@+id/edtCONTACTPERSON_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <SurfaceView
+            android:id="@+id/sp4_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtDESIGNATION_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="DESIGNATION" />
+
+        <EditText
+            android:id="@+id/edtDESIGNATION_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp5_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtPHONE_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:layout_below="@+id/sp1"
+            android:inputType="number"
+            android:text="TELEPHONE" />
+
+        <EditText
+            android:id="@+id/edtPHONE_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp6_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtMOBILENO_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="MOBILE NO" />
+
+        <EditText
+            android:id="@+id/edtMOBILENO_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp7_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtEMAIL_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="EMAIL" />
+
+        <EditText
+            android:id="@+id/edtEMAIL_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp8_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREQCAP_givref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REQUIRED CAPACITY" />
+
+        <EditText
+            android:id="@+id/edtREQCAP_givref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp9_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/ll_projectdelion_givref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMACHINEREQTIME_givref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MACHINE REQUIREMENT TIME" />
+
+            <LinearLayout
+                android:id="@+id/ll_projectdelion1_givref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_MACHINEREQTIME_givref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/txt_projectdelion"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="dd/MM/yyyy"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+                <ImageButton
+                    android:id="@+id/img_MACHINEREQTIME_givref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/et_projectdelion"
+                    android:layout_toRightOf="@+id/et_projectdelion"
+                    android:contentDescription="@string/img_datepicker"
+                    android:src="@drawable/ic_today_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SurfaceView
+            android:id="@+id/sp10_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_givref"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:background="@drawable/buttondeg"
+                android:text="ADD"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/remove_givref"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/add"
+                android:background="@drawable/buttondeg"
+                android:text="CLEAR"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lst_givref"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/add"></ListView>
+    </LinearLayout>
+
+</ScrollView>

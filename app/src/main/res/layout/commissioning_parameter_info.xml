@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_with_shadow"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_environment"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_environment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ENVIRONMENT (INDOOR / OUTDOOR)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_ambient_temperature_in_degree_celsius"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_ambient_temperature_in_degree_celsius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AMBIENT TEMPERATURE IN DEGREE CELSIUS"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_ducting_installed"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_ducting_installed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DUCTING INSTALLED (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_room_ventilation"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_room_ventilation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ROOM VENTILATION (GOOD / POOR / EXHAUST FAN)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_flexible_connection"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_flexible_connection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FLEXIBLE CONNECTION (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_insolation_value"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_insolation_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="INSOLATION VALUE (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_incoming_voltage"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_incoming_voltage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="INCOMING VOLTAGE (R / Y / B)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_supply_copper_cable_recommended_in_mm"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_supply_copper_cable_recommended_in_mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SUPPLY COPPER CABLE RECOMMENDED IN MM"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_fuse_installed_in_amps"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_fuse_installed_in_amps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FUSE INSTALLED IN AMPS"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_full_load_current"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_full_load_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FULL LOAD CURRENT (R / Y / B)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_unload_current"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_unload_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UNLOAD CURRENT (R / Y / B)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_setting_overload_protection_of_main_motor_in_amps"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_setting_overload_protection_of_main_motor_in_amps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SETTING OVERLOAD PROTECTION OF MAIN MOTOR IN AMPS"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_setting_overload_protection_of_fan_motor_in_amps"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_setting_overload_protection_of_fan_motor_in_amps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SETTING OVERLOAD PROTECTION OF FAN MOTOR IN AMPS"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_airend_temperature_in_degree_celcius"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_airend_temperature_in_degree_celcius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AIREND TEMPERATURE IN DEGREE CELCIUS"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pressur_setting"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_pressur_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PRESSUR SETTING (MIN - MAX)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_sump_pressure_at_unload_condition"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_sump_pressure_at_unload_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SUMP PRESSURE AT UNLOAD CONDITION"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dryer_pipeline_bypass"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_dryer_pipeline_bypass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DRYER PIPELINE BYPASS (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_filter_pipeline_bypass"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_filter_pipeline_bypass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FILTER PIPELINE BYPASS (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_vertical_air_receiver_grouting"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_vertical_air_receiver_grouting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="VERTICAL AIR RECEIVER GROUTING (YES / NO)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Save"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/add"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Clear"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

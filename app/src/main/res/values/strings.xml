@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">COBBY</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="logout">Logout</string>
+    <string name="sync">Sync Now</string>
+    <string name="yesno">Please select</string>
+    <string name="img_datepicker">Date</string>
+    <string name="show_subtitle">Daily Sales Report</string>
+    <string name="pleaseWait">Please wait</string>
+    <string name="webpage_being_loaded">Loading...</string>
+    <string name="questionmark">\?!</string>
+    <string name="explenation">Sorry, but i could not find a camera on your device.</string>
+    <string name="err_msg_empId">Enter Employee ID</string>
+    <string name="err_msg_empname">Enter Employee name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_mobile">Enter valid mobile phone number</string>
+    <string name="err_msg_dob">Please select your date of birth</string>
+    <string name="action_import">Import Data</string>
+    <string name="action_sync">Sync Now</string>
+    <string name="action_logout">Logout</string>
+    <string name="err_msg_personname">Enter Person name</string>
+    <string name="err_msg_persondesignation">Enter Person designation</string>
+    <string name="err_msg_perName">Enter Person name</string>
+    <string name="err_msg_perDesign">Enter Person designation</string>
+    <string name="err_msg_expType">Enter Expense type</string>
+    <string name="err_msg_expAmount">Enter Expense amount</string>
+    <string name="err_msg_proQty">Enter Product quantity</string>
+    <string name="err_msg_sparesQty">Enter Spares quantity</string>
+    <string name="err_msg_vendor">Enter Vendor name</string>
+    <string name="err_msg_refno">Enter Ref no</string>
+    <string name="err_msg_refdate">Enter Ref date</string>
+    <string name="err_msg_amount">Enter Amount</string>
+    <string name="err_msg_recedamount">Enter Reced amount</string>
+    <string name="err_msg_refdocno">Enter Ref Doc No</string>
+    <string name="err_msg_refdocdate">Enter Ref Doc Date</string>
+    <string name="err_msg_grievance">Enter Grievance</string>
+    <string name="err_msg_solution">Enter Solution</string>
+    <string name="err_msg_service_performed">Enter Service performed</string>
+    <string name="err_msg_action_required">Enter Action required</string>
+    <string name="err_msg_visit_summary">Enter Visit summary</string>
+    <string name="err_fill_field">Please fill the field</string>
+    <string name="err_ReferenceNo">Enter Reference No</string>
+    <string name="err_ReferenceDate">Select Reference Date</string>
+    <string name="err_EnquiryProviderName">Select Enquiry Provider Name</string>
+    <string name="err_Customer">Enter Customer Name</string>
+    <string name="err_Address">Enter Address</string>
+    <string name="err_Pincode">Enter Pincode</string>
+    <string name="err_ContactPerson">Enter Contact Person Name</string>
+    <string name="err_ContactPersonNo">Enter Contact Person Number</string>
+    <string name="err_StdCode">Enter STD Code</string>
+    <string name="err_Telephone">Enter Telephone Number</string>
+    <string name="err_Website">Enter Website</string>
+    <string name="err_ProductRequirement">Enter Product Requirement</string>
+    <string name="err_ReqOnOrBefore">Select Requirement On Or Before</string>
+    <string name="err_Remarks">Enter Remarks</string>
+
+
+    <string-array name="selectyesno">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="selectno">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="contact">
+        <item>They approched us</item>
+        <item>We approched them</item>
+    </string-array>
+
+    <string-array name="interested_in">
+        <item>Stock and sell</item>
+        <item>Commission basis</item>
+    </string-array>
+
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

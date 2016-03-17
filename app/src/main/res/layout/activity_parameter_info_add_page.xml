@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_with_shadow"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_control_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_control_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CONTROL TYPE (SIGMA / BASIC)"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pressure_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_pressure_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PRESSURE SETTING (MIN-MAX) IN bar"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_ambient_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_ambient_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AMBIENT TEMPERATURE"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_incoming_voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_incoming_voltage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="INCOMING VOLTAGE ( R / Y / B )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_ducting_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_ducting_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DUCTING FACILITY"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_running_hours_per_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_running_hours_per_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RUNNING HOURS PER DAY"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_running_days_per_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_running_days_per_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RUNNING DAYS PER WEEK"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_is_compressor_cleaned_everyday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_is_compressor_cleaned_everyday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="IS COMPRESSOR CLEANED EVERYDAY? (YES/NO)"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_total_run_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_total_run_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TOTAL RUN HOURS"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_total_load_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_total_load_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TOTAL LOAD HOURS"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_airend_discharge_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_airend_discharge_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AIREND DISCHARGE TEMPERATURE"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_current_in_load_condition_amps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_current_in_load_condition_amps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CURRENT IN LOAD CONDITION AMPS ( R / Y / B )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_current_in_idle_condition_amps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_current_in_idle_condition_amps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CURRENT IN IDLE CONDITION AMPS ( R / Y / B )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_no_of_motor_starts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_no_of_motor_starts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NO. OF MOTOR STARTS"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_no_of_load_valve_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_no_of_load_valve_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NO. OF LOAD VALVE ON"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_oil_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_oil_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OIL LEVEL ( LOW / NORMAL )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_cooler_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_cooler_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="COOLER CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_motor_bearing_noise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_motor_bearing_noise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MOTOR BEARING NOISE ( NORMAL / ABNORMAL )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_airend_bearing_noise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_airend_bearing_noise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AIREND BEARING NOISE ( NORMAL / ABNORMAL )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_inlet_valve_working_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_inlet_valve_working_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="INLET VALVE WORKING CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_combination_valve_working_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_combination_valve_working_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="COMBINATION VALVE WORKING CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_cav_valve_working_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_cav_valve_working_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CAV VALVE WORKING CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_mpc_valve_working_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_mpc_valve_working_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MPC VALVE WORKING CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_coupling_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_coupling_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="COUPLING CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_belt_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_belt_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="BELT CONDITION ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_air_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_air_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AIR FILTER ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_oil_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_oil_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OIL FILTER ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_oil_separator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_oil_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OIL SEPARATOR ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_oil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_oil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OIL ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_filter_mat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_filter_mat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FILTER MAT ( GOOD / BAD )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_bearing_replacement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_bearing_replacement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="BEARING REPLACEMENT ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_motor_greasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_motor_greasing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MOTOR GREASING ( APPLICABLE / NOT APPLICABLE )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_motor_greasing_in_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_motor_greasing_in_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MOTOR GREASING ( IN HOURS )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_sump_pressure_at_unload_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_sump_pressure_at_unload_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SUMP PRESSURE AT UNLOAD CONDITION ( IN bar )"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Save"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/remove_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/add"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Clear"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

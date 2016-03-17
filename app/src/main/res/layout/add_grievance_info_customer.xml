@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtGRIEVANCE_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRIEVANCE" />
+
+        <EditText
+            android:id="@+id/edtGRIEVANCE_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtName" />
+
+        <SurfaceView
+            android:id="@+id/sp1_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtName"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtSOLUTION_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="SOLUTION" />
+
+        <EditText
+            android:id="@+id/edtSOLUTION_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone" />
+
+        <SurfaceView
+            android:id="@+id/sp2_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/add_cus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:background="@drawable/buttondeg"
+                android:text="Save"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/remove_cus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/add"
+                android:background="@drawable/buttondeg"
+                android:text="Remove"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lst_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/add" >
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

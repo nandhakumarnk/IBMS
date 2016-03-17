@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCity_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City" />
+
+        <EditText
+            android:id="@+id/edtCity_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtName" />
+
+        <SurfaceView
+            android:id="@+id/sp1_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtName"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtAddress_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/edtAddress_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone" />
+
+        <SurfaceView
+            android:id="@+id/sp2_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtContactPerson_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Contanct Person" />
+
+        <EditText
+            android:id="@+id/edtContanctPerson_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp3_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtDesignation_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Designation" />
+
+        <EditText
+            android:id="@+id/edtDesignation_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <SurfaceView
+            android:id="@+id/sp4_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtPhone_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Telephone" />
+
+        <EditText
+            android:id="@+id/edtPhone_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp5_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtMobile_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Mobile" />
+
+        <EditText
+            android:id="@+id/edtMobile_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp6_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtEmail_binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/edtemail_binfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:inputType="textEmailAddress" />
+
+        <SurfaceView
+            android:id="@+id/sp7_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_binfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:background="@drawable/buttondeg"
+                android:text="Save"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/remove_binfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/add"
+                android:background="@drawable/buttondeg"
+                android:text="Clear"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lst_binfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/add"></ListView>
+    </LinearLayout>
+
+</ScrollView>

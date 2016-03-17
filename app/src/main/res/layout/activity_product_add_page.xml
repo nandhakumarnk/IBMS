@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_shadow"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPrincipal_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal" />
+
+            <Spinner
+                android:id="@+id/spn_selectPrincipal_product"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:entries="@array/selectyesno"
+                android:prompt="@string/yesno"
+                android:spinnerMode="dialog" />
+
+            <SurfaceView
+                android:id="@+id/sp1_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtName"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtPartno_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp1"
+                android:text="Part no" />
+
+            <Spinner
+                android:id="@+id/spn_selectPartno_product"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:prompt="@string/yesno"
+                android:spinnerMode="dialog" />
+
+            <SurfaceView
+                android:id="@+id/sp2_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtPhone"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtShortDesc_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp1"
+                android:text="Short Description" />
+
+            <TextView
+                android:id="@+id/txtShortDescResult_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/sp1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:text="Short Description"
+                android:textSize="14sp"
+                android:textStyle="bold|normal" />
+
+            <SurfaceView
+                android:id="@+id/sp3_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtPhone"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtProductType_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp1"
+                android:text="Product Type" />
+
+            <TextView
+                android:id="@+id/txtProductTypeResult_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/sp1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:text="Product Type"
+                android:textSize="14sp"
+                android:textStyle="bold|normal" />
+
+            <SurfaceView
+                android:id="@+id/sp4_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtPhone"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtUOM_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp1"
+                android:text="UOM" />
+
+            <TextView
+                android:id="@+id/txtUOMResult_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/sp1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:text="UOM"
+                android:textSize="14sp"
+                android:textStyle="bold|normal" />
+
+            <SurfaceView
+                android:id="@+id/sp5_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtPhone"
+                android:background="#FFFFFF" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_product_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtQty_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:hint="Quantity"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <SurfaceView
+                android:id="@+id/sp6_product"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edtPhone"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Save"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/remove_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/add"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondeg"
+                    android:text="Clear"
+                    android:textColor="@color/list_item_title"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

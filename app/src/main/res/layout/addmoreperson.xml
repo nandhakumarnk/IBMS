@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtName_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/edtName_more"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtName" />
+
+    <SurfaceView
+        android:id="@+id/sp1_more"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtName"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtDesignation_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp1"
+        android:text="Designation" />
+
+    <EditText
+        android:id="@+id/edtDesignation_more"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txtPhone" />
+
+    <SurfaceView
+        android:id="@+id/sp2_more"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtPhone"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtPhone_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp1"
+        android:text="Mobile" />
+
+    <EditText
+        android:id="@+id/edtPhone_more"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txtPhone"
+        android:digits="0123456789"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:singleLine="true" />
+
+    <SurfaceView
+        android:id="@+id/sp3_more"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtPhone"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtEmail_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp1"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/edtemail_more"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_toRightOf="@+id/txtPhone"
+        android:inputType="textEmailAddress" />
+
+    <SurfaceView
+        android:id="@+id/sp4_more"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edtPhone"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_more"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp2"
+            android:background="@drawable/buttondeg"
+            android:text="Save"
+            android:textColor="@color/list_item_title"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/remove_more"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp2"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/add"
+            android:background="@drawable/buttondeg"
+            android:text="Remove"
+            android:textColor="@color/list_item_title"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_more"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/add"></ListView>
+
+</LinearLayout>

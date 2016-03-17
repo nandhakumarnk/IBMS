@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtVENDOR_NAME_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VENDOR NAME" />
+
+        <EditText
+            android:id="@+id/edtVENDOR_NAME_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtName" />
+
+        <SurfaceView
+            android:id="@+id/sp1_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtName"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREF_NO_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REF.NO" />
+
+        <EditText
+            android:id="@+id/edtREF_NO_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone" />
+
+        <SurfaceView
+            android:id="@+id/sp2_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREF_DATE_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REF DATE" />
+
+        <LinearLayout
+            android:id="@+id/ll_REF_DATE_cus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_REF_DATE_cus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_REF_DATE_cus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="REF DATE"></EditText>
+
+                <ImageButton
+                    android:id="@+id/img_REF_DATE_cus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_today_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SurfaceView
+            android:id="@+id/sp3_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtAMOUNT_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="AMOUNT" />
+
+        <EditText
+            android:id="@+id/edtAMOUNT_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <SurfaceView
+            android:id="@+id/sp4_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtRECD_AMOUNT_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="RECD.AMOUNT" />
+
+        <EditText
+            android:id="@+id/edtRECD.AMOUNT_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp5_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREF_DOC_NO_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REF.DOC.NO" />
+
+        <EditText
+            android:id="@+id/edtREF_DOC_NO_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone" />
+
+        <SurfaceView
+            android:id="@+id/sp6_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREF_DOC_DATE_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REF.DOC.DATE" />
+
+        <LinearLayout
+            android:id="@+id/ll_REF_DOC_DATE_cus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_REF_DOC_DATE_cus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_REF_DOC_DATE_cus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="REF DOC DATE"></EditText>
+
+                <ImageButton
+                    android:id="@+id/img_REF_DOC_DATE_cus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_today_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SurfaceView
+            android:id="@+id/sp7_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtREMARKS_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:text="REMARKS" />
+
+        <EditText
+            android:id="@+id/edtREMARKS_cus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_toRightOf="@+id/txtPhone"
+            android:singleLine="true" />
+
+        <SurfaceView
+            android:id="@+id/sp8_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edtPhone"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_cus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:background="@drawable/buttondeg"
+                android:text="Save"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/remove_cus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp2"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/add"
+                android:background="@drawable/buttondeg"
+                android:text="Remove"
+                android:textColor="@color/list_item_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lst_cus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/add"></ListView>
+    </LinearLayout>
+
+</ScrollView>
