@@ -28,6 +28,7 @@ public class LoginForm extends AppCompatActivity {
     SQLiteHelper db;
     String getSimSerialNumber,SIMSerial;
 
+    //new
     // flag for GPS status
     boolean isGPSEnabled = false;
 
