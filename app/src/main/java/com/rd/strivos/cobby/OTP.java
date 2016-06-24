@@ -39,13 +39,13 @@ public class OTP extends AppCompatActivity {
                 // TODO Auto-generated method stub
 
                 int cOTP = 0, OTP = 0;
-                cOTP = Integer.parseInt(checkOTP);
+                cOTP = Integer.parseInt(vOTP);
                 OTP = Integer.parseInt(_OTP.getText().toString().trim());
                 if (cOTP == OTP) {
-                    sendSMS(MobileUser, msg);
-                    sendSMS(HR, msg);
-                    Intent i = new Intent(OTP.this, MobileNumberVerification.class);
-                    //Intent i = new Intent(OTP.this, SetPINtoLogin.class);
+                    //sendSMS(MobileUser, msg);
+                    //sendSMS(HR, msg);
+                    //Intent i = new Intent(OTP.this, MobileNumberVerification.class);
+                    Intent i = new Intent(OTP.this, SetPINtoLogin.class);
                     i.putExtra("MobileNumber", MobileUser);
                     //i.putExtra("Status",Status);
                     startActivity(i);
@@ -54,7 +54,6 @@ public class OTP extends AppCompatActivity {
                     Toast toast = Toast.makeText(OTP.this, "Invalid OTP", Toast.LENGTH_SHORT);
                     toast.show();
                 }
-
             }
         });
     }

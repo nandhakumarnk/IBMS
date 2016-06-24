@@ -1,5 +1,6 @@
 package com.rd.strivos.cobby;
 
+import android.*;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,21 +13,24 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class LoginForm extends AppCompatActivity {
-
+    private static final String TAG = LoginForm.class.getName();
     public static int NETWORK_STATE = 0, LOCATION_STATE = 0;
     public static final int CONNECTED = 1;
     public static final int NOT_CONNECTED = 2;
     Button btn_login;
     SQLiteHelper db;
-    String getSimSerialNumber,SIMSerial;
+    String getSimSerialNumber, SIMSerial;
 
     //new
     // flag for GPS status
@@ -52,6 +56,12 @@ public class LoginForm extends AppCompatActivity {
         btn_login = (Button) findViewById(R.id.btn_login);
         db = new SQLiteHelper(getApplicationContext());
         //turnGPSOn();
+
+        initialSetup();
+
+    }
+
+    private void initialSetup() {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         getSimSerialNumber = telephonyManager.getSimSerialNumber();
 

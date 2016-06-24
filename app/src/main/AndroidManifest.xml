@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.rd.strivos.cobby">
 
     <uses-permission android:name="com.rd.strivos.cobby.permission.MAPS_RECEIVE" />
@@ -62,10 +61,13 @@
         </activity>
         <activity
             android:name="com.rd.strivos.cobby.LoginForm"
-            android:label="IBMS"></activity>
+            android:label="COBBY"></activity>
         <activity
             android:name="com.rd.strivos.cobby.Register"
             android:label="User Registration"></activity>
+        <activity
+            android:name="com.rd.strivos.cobby.EnablePermission"
+            android:label="COBBY"></activity>
         <activity
             android:name="com.rd.strivos.cobby.OTP"
             android:label="Confirm OTP"></activity>

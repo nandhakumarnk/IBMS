@@ -14,10 +14,12 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
@@ -44,7 +46,7 @@ import java.util.regex.Pattern;
  * Created by Nandha on 07-12-2015.
  */
 public class Register extends AppCompatActivity {
-
+    private static final String TAG = LoginForm.class.getName();
     public static int NETWORK_STATE = 0, LOCATION_STATE = 0;
     public static final int CONNECTED = 1;
     public static final int NOT_CONNECTED = 2;
@@ -74,6 +76,33 @@ public class Register extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
+        initialSetup();
+
+        _Date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog(0);
+            }
+        });
+
+        _Submit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO Auto-generated method stub
+                //Toast.makeText(getApplicationContext(), "No Internet Connection. Your device is currently not connected to the internet, please try again!", Toast.LENGTH_SHORT).show();
+                _Submit.setText("Please wait...");
+                _Submit.setEnabled(false);
+                dbHelper.flag_insert("Nil");
+                submitForm();
+                //mProgress.dismiss();
+            }
+        });
+    }
+
+    private void initialSetup() {
+
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         IMEINo = telephonyManager.getDeviceId();
         Model = android.os.Build.MODEL;
@@ -100,6 +129,7 @@ public class Register extends AppCompatActivity {
         Randnumber = randInt(1000, 5000);
         System.out.println("Random number" + Randnumber);
 
+
         //turnGPSOn();
 
         Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this,
@@ -107,27 +137,6 @@ public class Register extends AppCompatActivity {
 
         this.registerReceiver(this.mConnReceiver, new IntentFilter(
                 ConnectivityManager.CONNECTIVITY_ACTION));
-
-        _Date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showDialog(0);
-            }
-        });
-
-        _Submit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                //Toast.makeText(getApplicationContext(), "No Internet Connection. Your device is currently not connected to the internet, please try again!", Toast.LENGTH_SHORT).show();
-                _Submit.setText("Please wait...");
-                _Submit.setEnabled(false);
-                dbHelper.flag_insert("Nil");
-                submitForm();
-                //mProgress.dismiss();
-            }
-        });
     }
 
     public void turnGPSOn() {
@@ -153,6 +162,10 @@ public class Register extends AppCompatActivity {
         final String mobile = _Mobile.getText().toString().trim();
         final String dob = _Date.getText().toString().trim();
         final String otp = String.valueOf(Randnumber);
+
+        Log.i(TAG,
+                "employeeId : "+employeeId+"employeeName : "+employeeName+"email : "+email+"mobile : "+dob+"IMEINo : "+Model+"otp : "+otp+"getSimSerialNumber : "+getSimSerialNumber);
+//employeeId, employeeName, email, mobile, dob, IMEINo, Model, otp, getSimSerialNumber
 
         if (!validateEmployeeId()) {
             _Submit.setText("Submit");
