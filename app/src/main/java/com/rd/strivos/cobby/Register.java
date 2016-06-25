@@ -502,7 +502,7 @@ public class Register extends AppCompatActivity {
     private void InsertEmployee(String employeeId, String Otp, String Status) {
         try {
 
-            String qry = "Select A.NAME,EJ.MOBILE,EJ.EMPLOYEEID, R.DESCRIPTION As DESIGNATION,A.ID AS EMPLOYEE_ID, D.DESCRIPTION AS DEPARTMENT,EJ.DEPARTMENT_ID, EJ.DESIGNATION_ID,ISNULL(EJ.EMAIL,0) AS EMAIL,ISNULL(EJ.PINNO,0) AS PINNO,A.COMPANYM_ID,CONVERT(VARCHAR(10),A.DOB,103) as DOB,EJ.SIMNO From EMPLOYEEM A INNER JOIN EMPLOYEEMJOININGDETAILS EJ ON EJ.EMPLOYEEM_ID = A.ID Inner Join MASTERM R On R.ID = EJ.DESIGNATION_ID Inner Join MASTERM D On D.ID = EJ.DEPARTMENT_ID Where A.COMPANYM_ID = '9e77ea32-d210-4b8f-945c-097e94932f61' And A.STATUSM_ID<>'9569e2bd-4e32-4ab6-9a04-3fc4699d9f43' AND EJ.EMPLOYEEID='" + employeeId + "'";
+            String qry = "Select A.NAME,EJ.MOBILE,EJ.EMPLOYEEID, R.DESCRIPTION As DESIGNATION,A.ID AS EMPLOYEE_ID, D.DESCRIPTION AS DEPARTMENT,EJ.DEPARTMENT_ID, EJ.DESIGNATION_ID,ISNULL(EJ.EMAIL,0) AS EMAIL,ISNULL(EJ.PINNO,0) AS PINNO,A.COMPANYM_ID,CONVERT(VARCHAR(10),A.DOB,103) as DOB,EJ.SIMNO From EMPLOYEEM A INNER JOIN EMPLOYEEMJOININGDETAILS EJ ON EJ.EMPLOYEEM_ID = A.ID Inner Join MASTERM R On R.ID = EJ.DESIGNATION_ID Inner Join MASTERM D On D.ID = EJ.DEPARTMENT_ID Where A.COMPANYM_ID = '102902c0-e9b3-44fb-9df5-711bce2d46d4' And A.STATUSM_ID<>'9569e2bd-4e32-4ab6-9a04-3fc4699d9f43' AND EJ.EMPLOYEEID='" + employeeId + "'";
 
             String result30 = WebServices.JSONWithQry("EMPLOYEE", qry);
             JSONArray json = new JSONArray(result30);
@@ -541,6 +541,8 @@ public class Register extends AppCompatActivity {
                 dbHelper.register_insert(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, Otp, Status);
             }
         } catch (Exception e) {
+
+            e.printStackTrace();
         }
     }
 
