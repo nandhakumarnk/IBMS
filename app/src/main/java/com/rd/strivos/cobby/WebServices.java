@@ -17,7 +17,7 @@ public class WebServices {
     private static final String SOAP_ACTION = "http://223.30.140.163:81/";
     private static final String NAMESPACE = "http://223.30.140.163:81/";
     private static final String URL = "http://223.30.140.163:81/InboxDetails.asmx";
-    private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB;User ID=sa;Password=pod1234";
+    private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB;User ID=sa;Password=coburg@1234";
 
 //    UAT Connection
 

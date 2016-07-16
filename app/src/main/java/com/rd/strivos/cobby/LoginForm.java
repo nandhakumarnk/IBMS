@@ -228,7 +228,6 @@ public class LoginForm extends AppCompatActivity {
             // Ask user to enable GPS/network in settings
             gps.showSettingsAlert();
         }
-
     }
 
     private void showGPSDisabledAlertToUser() {
