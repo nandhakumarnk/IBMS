@@ -42,8 +42,8 @@ public class OTP extends AppCompatActivity {
                 cOTP = Integer.parseInt(vOTP);
                 OTP = Integer.parseInt(_OTP.getText().toString().trim());
                 if (cOTP == OTP) {
-                    //sendSMS(MobileUser, msg);
-                    //sendSMS(HR, msg);
+                    sendSMS(MobileUser, msg);
+                    sendSMS(HR, msg);
                     Intent i = new Intent(OTP.this, MobileNumberVerification.class);
                     //Intent i = new Intent(OTP.this, SetPINtoLogin.class);
                     i.putExtra("MobileNumber", MobileUser);
