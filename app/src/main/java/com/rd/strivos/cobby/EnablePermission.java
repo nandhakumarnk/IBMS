@@ -1,5 +1,7 @@
 package com.rd.strivos.cobby;
 
+import android.*;
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,7 +15,7 @@ import android.widget.Button;
  * Created by Data Crawl 6 on 24-Jun-16.
  */
 public class EnablePermission extends AppCompatActivity {
-    private static final String TAG = LoginForm.class.getName();
+    private static final String TAG = EnablePermission.class.getName();
     Button _Submit;
     private static final int REQUEST_PERMISSION_All = 111;
     private static String[] PERMISSIONS_ALL = {android.Manifest.permission.READ_CONTACTS,
@@ -21,7 +23,8 @@ public class EnablePermission extends AppCompatActivity {
             android.Manifest.permission.WRITE_CALENDAR, android.Manifest.permission.ACCESS_FINE_LOCATION,
             android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.CALL_PHONE,
             android.Manifest.permission.READ_PHONE_STATE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.CAMERA};
+            android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.CAMERA,
+            Manifest.permission.READ_SMS, Manifest.permission.SEND_SMS};
 
 
     @Override
