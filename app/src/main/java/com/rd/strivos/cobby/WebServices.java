@@ -19,12 +19,14 @@ public class WebServices {
     private static final String URL = "http://223.30.140.163:81/InboxDetails.asmx";
     private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB;User ID=sa;Password=coburg@1234";
 
+
 //    UAT Connection
 
-//    private static final String SOAP_ACTION = "http://223.30.140.163:82/";
-//    private static final String NAMESPACE = "http://223.30.140.163:82/";
-//    private static final String URL = "http://223.30.140.163:82/InboxDetails.asmx";
-//    private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB_UAT;User ID=sa;Password=pod1234";
+  /*  private static final String SOAP_ACTION = "http://223.30.140.163:82/";
+    private static final String NAMESPACE = "http://223.30.140.163:82/";
+    private static final String URL = "http://223.30.140.163:82/InboxDetails.asmx";
+    private static final String CONNANAME = "Data Source=223.30.140.163\\SQLEXPRESS;Initial Catalog=IBMS_DB_UAT;User ID=sa;Password=coburg@1234";
+    */
 
 
     public static String EnquiryBank(String COMPANYM_ID, String DOCUMENTM_ID, String DOCUMENTDATE, String EMPLOYEEM_ID,
