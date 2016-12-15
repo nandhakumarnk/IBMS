@@ -10,6 +10,9 @@ import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+
+// Restarted @ 08.24 AM 16-10-2016
+
 public class Splash extends Activity {
     private static final String TAG = LoginForm.class.getName();
     private static int SPLASH_TIME_OUT = 3000;

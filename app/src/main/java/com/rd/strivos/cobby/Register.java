@@ -164,7 +164,7 @@ public class Register extends AppCompatActivity {
         final String otp = String.valueOf(Randnumber);
 
         Log.i(TAG,
-                "employeeId : "+employeeId+"employeeName : "+employeeName+"email : "+email+"mobile : "+dob+"IMEINo : "+Model+"otp : "+otp+"getSimSerialNumber : "+getSimSerialNumber);
+                "employeeId : " + employeeId + "employeeName : " + employeeName + "email : " + email + "mobile : " + dob + "IMEINo : " + Model + "otp : " + otp + "getSimSerialNumber : " + getSimSerialNumber);
 //employeeId, employeeName, email, mobile, dob, IMEINo, Model, otp, getSimSerialNumber
 
         if (!validateEmployeeId()) {
@@ -215,14 +215,12 @@ public class Register extends AppCompatActivity {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-            Toast toast = Toast
-                    .makeText(
-                            Register.this,
-                            "You have been successfully registered and OTP will sent to your registered mobile number to set PIN for login.",
-                            Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(Register.this, "You have been successfully registered and OTP will sent to your registered mobile number to set PIN for login.", Toast.LENGTH_SHORT);
+            //Toast toast = Toast.makeText(Register.this, "You have been successfully registered, set PIN for login.", Toast.LENGTH_SHORT);
             toast.show();
 
             Intent i = new Intent(Register.this, OTP.class);
+            //Intent i = new Intent(Register.this, SetPINtoLogin.class);
             i.putExtra("MobileNumber", mobile);
             i.putExtra("OTP", otp);
             i.putExtra("Status", "New");
@@ -242,14 +240,12 @@ public class Register extends AppCompatActivity {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-            Toast toast = Toast
-                    .makeText(
-                            Register.this,
-                            "You have registered already and OTP will sent to your registered mobile number to login.",
-                            Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(Register.this, "You have registered already and OTP will sent to your registered mobile number to login.", Toast.LENGTH_SHORT);
+//            Toast toast = Toast.makeText(Register.this, "You have registered already, set PIN for login.", Toast.LENGTH_SHORT);
             toast.show();
 
             Intent i = new Intent(Register.this, OTP.class);
+//            Intent i = new Intent(Register.this, SetPINtoLogin.class);
             i.putExtra("MobileNumber", mobile);
             i.putExtra("OTP", otp);
             i.putExtra("Status", "InUser");

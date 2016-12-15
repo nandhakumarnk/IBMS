@@ -17,8 +17,8 @@ public class OTP extends AppCompatActivity {
     String checkOTP = "0";
     SQLiteHelper dbHelper;
     String msg = "This is an automatic message to activate COBBY mobile.",  MobileUser, vOTP,Status;
-    String HR = "9791477999";
-    //String HR = "9865301967";
+//    String HR = "9791477999";
+    String HR = "9865301967";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
